@@ -4,7 +4,7 @@ A clean, minimal Notes App inspired by **Google Keep**, built using **HTML, CSS,
 Create, edit, and delete notes — all saved automatically in your browser using `localStorage`.
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/iamsamimsarkar/Google-Keeps-Notes/preview.jpg" alt="Google Keeps Notes Screenshot" width="600"/>
+  <img src="https://raw.githubusercontent.com/iamsamimsarkar/Google-Keeps-Notes/main/preview.jpg" alt="Google Keeps Notes Screenshot" width="600"/>
 </p>
 
 ---
