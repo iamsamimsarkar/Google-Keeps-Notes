@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.heading {
+  width: 100%;
+  padding: 20px;
+  background-color: #f1c40f;
+  color: #282936;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.add-btn {
+  margin: 20px 20px 20px auto;
+  display: block;
+  background: none; 
+  border: none;
+  padding: 12px 16px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.add-btn span {
+  position: relative;
+  z-index: 1000;
+}
+
+.add-btn span::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 30%;
+  padding: 20px 12px;
+  background-color: #f1c40f;
+  color: #282936;
+  border-radius: 5px;
+  z-index: -1;
+  transition: width 0.5s ease-in-out;
+}
+
+.add-btn:hover span:after {
+  width: 100%;
+}
+
+.main {
+  max-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  gap: 20px;
+}
+
+.note {
+  width: 250px;
+  padding: 10px 0;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #003;
+}
+
+.note .note-header {
+  text-align: right;
+  margin-top: 10px;
+  padding: 0 15px;
+}
+
+.note-header a {
+  background-color: #f8f9fa;
+  padding: 7px;
+  border-radius: 5px;
+  margin: 3px;
+  transition: all 0.5s ease-in-out;
+}
+
+.note-header .edit-btn {
+  color: #0080ff;
+}
+
+.note-header .delete-btn {
+  color: #dc3545;
+}
+
+.note-header .edit-btn:hover {
+  background: #0080ff;
+  color: #fff;
+}
+
+.note-header .delete-btn:hover {
+  background: #dc3545;
+  color: #fff;
+}
+
+.note .note-content {
+  height: 200px;
+  max-height: 200px;
+  text-wrap: wrap;
+  overflow: auto;
+  margin-top: 20px;
+  padding: 0 10px;
+  outline: none;
+}
